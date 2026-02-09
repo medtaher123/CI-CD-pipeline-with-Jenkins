@@ -1,0 +1,13 @@
+{
+  "name": "generateur-excuses",
+  "version": "1.0.0",
+  "description": "API critique pour les devops",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node test.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
