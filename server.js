@@ -11,8 +11,8 @@ const excuses = [
     "C'est un problème de cache, videz-le et réessayez.",
     "C'est un problème de permissions, je vais vérifier ça.",
     "Je suis sûr que c'était pas comme ça hier.",
-    "C'est un problème de version, je vais vérifier les dépendances."
     "C'est un problème de réseau, je vais vérifier la connexion.",
+    "C'est un problème de version, je vais vérifier les dépendances."
 ];
 
 app.get('/', (req, res) => {
