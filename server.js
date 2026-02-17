@@ -19,7 +19,7 @@ app.get('/', (req, res) => {
     const randomExcuse = excuses[Math.floor(Math.random() * excuses.length)];
     res.json({ 
         app: "Générateur d'Excuses 3000",
-        message: randomExcuse,
+        // message: randomExcuse, // ERREUR SIMULÉE : champ message commenté
         version: "1.0"
     });
 });
