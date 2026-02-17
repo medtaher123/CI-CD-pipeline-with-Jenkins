@@ -10,8 +10,8 @@ const excuses = [
     "J'ai pas touché à ce module depuis 6 mois.",
     "C'est un problème de cache, videz-le et réessayez.",
     "C'est un problème de permissions, je vais vérifier ça.",
-    "Je suis sûr que c'était pas comme ça hier.",
     "C'est un problème de réseau, je vais vérifier la connexion.",
+    "Je suis sûr que c'était pas comme ça hier.",
     "C'est un problème de version, je vais vérifier les dépendances."
 ];
 
