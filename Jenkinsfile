@@ -40,7 +40,9 @@ pipeline {
                 script {
                     // Connexion sécurisée à Docker Hub via les credentials Jenkins
                     withCredentials([usernamePassword(credentialsId: DOCKER_CREDENTIALS_ID, usernameVariable: 'DOCKER_USER', passwordVariable: 'DOCKER_PASS')]) {
-                        sh "echo $DOCKER_PASS | docker login -u $DOCKER_USER --password-stdin"
+                        // Les guillemets simples '...' disent à Jenkins : "Touche pas à ça, laisse le shell gérer"
+                        sh 'echo $DOCKER_PASS | docker login -u $DOCKER_USER --password-stdin'
+                        
                         // Push des deux tags
                         sh "docker push ${IMAGE_NAME}:${env.BUILD_NUMBER}"
                         sh "docker push ${IMAGE_NAME}:latest"
